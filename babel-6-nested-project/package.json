@@ -1,0 +1,27 @@
+{
+  "name": "babel-7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:dev":
+      "webpack --mode development --config webpack.config.js --json > stats.dev.json",
+    "build:prod":
+      "webpack --mode production --config webpack.config.js --json > stats.prod.json",
+    "analyze:dev":
+      "yarn run build:dev && webpack-bundle-analyzer stats.dev.json",
+    "analyze:prod":
+      "yarn run build:prod && webpack-bundle-analyzer stats.prod.json"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.8",
+    "webpack": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-cli": "^2.0.13"
+  }
+}
