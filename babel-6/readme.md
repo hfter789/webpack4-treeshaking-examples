@@ -4,4 +4,4 @@ yarn
 yarn run analyze
 ```
 
-![Output Example](/images/analyze-output.png)
+![Output Example](./analyze-output.png)
